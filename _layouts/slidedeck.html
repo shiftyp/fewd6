@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+	<link href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/reveal.min.css" rel="stylesheet" />
+	<link href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/theme/moon.css" rel="stylesheet" />
+	<link href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/css/zenburn.css" rel="stylesheet" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.js" type="text/javascript"></script>
+	<style>
+		body {
+			background: none;
+		}
+		.reveal h1, .reveal h2, .reveal h3{
+			color: #81a1b8;
+		}
+	</style>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section
+				data-markdown="{{ site.baseurl }}/slides/{{ page.markdown }}.md"  
+				data-separator="^\n\n\n"  
+				data-vertical="^\n\n"  
+				data-notes="^Note:"  
+			>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript">
+		Reveal.initialize({
+			parallaxBackgroundImage : '{{ site.baseurl }}/img/old_mathematics.png',
+			parallaxBackgroundSize : '200px 200px',
+			transition : 'linear',
+			dependencies : [
+				{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>

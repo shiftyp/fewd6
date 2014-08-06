@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+	<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="{{ page.styles | prepend: site.baseurl }}">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="ribbon box-shadow white-transparent">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="logo-container shadow shadow-after">
+					<span class="logo">FEWD</span>
+				</div>
+				<h1 class="page-title">Front-End Web Development Notebook</h1>
+			</div>
+		</div>
+		{{ content }}
+	</div>
+</body>
+</html>
