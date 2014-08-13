@@ -2,8 +2,8 @@
 title: FEWD6 Notebook
 email: lynch.r.j@gmail.com
 description: "Resources for the FEWD6 class at General Assembly in Washington, DC."
-baseurl: "/fewd6_internal"
-url: "http://shiftyp.github.io/fewd6_internal"
+baseurl: "/fewd6"
+url: "http://shiftyp.github.io/fewd6"
 
 # Build settings
 markdown: kramdown
