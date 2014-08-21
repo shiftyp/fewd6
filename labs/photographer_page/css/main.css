@@ -7,10 +7,6 @@ body {
 	font-size:
 }
 
-/*
-NOTE FROM WADE: Why not just * this for all selectors?
-
-I usually do:
 *,
 *:after,
 *:before {
@@ -19,22 +15,10 @@ I usually do:
 		      box-sizing: border-box;
 }
 
-Just a thought!
-*/
-div, nav, article, section, ul, li{
-	box-sizing: border-box;
-}
-
 /* Helper Classes */
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-}
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
 
 .float-left {
 	float: left;
