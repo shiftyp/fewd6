@@ -24,6 +24,10 @@ body {
 	float: left;
 }
 
+.float-right {
+	float: right;
+}
+
 .text-center {
 	text-align: center;
 }
@@ -38,6 +42,14 @@ body {
 
 .white-bg {
 	background-color: #fff;
+}
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
 }
 
 /* Module Classes */
@@ -218,7 +230,6 @@ body {
 
 .gallery-container {
 	background: #000;
-	position: relative;
 }
 
 .gallery-title {
@@ -237,6 +248,7 @@ body {
 	position: relative;
 	display: block;
 	padding-right: 4px;
+	cursor: pointer;
 }
 
 .gallery-image-main {
@@ -349,4 +361,52 @@ footer {
 .copyright {
 	margin-top: 15px;
 	font-size: 0.7em;
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.8;
+	z-index: 3;
+}
+
+.modal {
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	z-index: 3;
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+}
+
+.modal-header {
+	text-align: right;
+}
+
+.modal-image {
+	display: block;
+	height: 100%;
+	max-height: 100%;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+.modal-caption {
+	padding-top: 8px;
+}
+
+.modal-prev, .modal-next, .modal-close{
+	display: inline-block;
+	padding: 8px;
+	font-size: 1.2em;
+	cursor: pointer;
 }
